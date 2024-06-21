@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let data = "Secret Information"
+          class User{
+               constructor(name,email){
+                   this.Name= name;
+                   this.Email = email;
+
+               }
+               viewData(){
+                    console.log("this data is",data);
+               }
+          }
+
+        //   class student1 extends User{
+        //       constructor(number ,email,name){
+        //         super(name,email);
+        //          this.number ="2345"
+        //       }
+        //   }
+
+        class Admin extends User{
+            constructor(name,email){
+                super(name,email);
+                
+            }
+             editData(){
+                DATA ="add new value"
+             }
+        }
+           let admin1 = new Admin("admin","Admin@gamil.com");
+          let student1 = new User("Siya","Siya@mail.com")
+          let student2 = new User("kriya","kriya@mail.com")
+        // let student = new student1("Siya","Siya@mail.com");
+    </script>
+</body>
+</html>
